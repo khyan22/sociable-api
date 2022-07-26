@@ -36,7 +36,7 @@ const userController = {
       .then(dbUserData => res.json(dbUserData))
       .catch(err => {
         console.log(err);
-        res.status(400).json(err);
+        res.status(500).json(err);
       });
   },
 
@@ -51,7 +51,7 @@ const userController = {
       })
       .catch(err => {
         console.log(err);
-        res.status(400).json(err);
+        res.status(500).json(err);
       });
   },
 
@@ -64,11 +64,11 @@ const userController = {
         }
         Thought.deleteMany({ username: dbUserData.username })
         .then(dbThoughtData => res.json(dbThoughtData))
-        .catch(err => res.status(400).json(err));
+        .catch(err => res.status(500).json(err));
       })
       .catch(err => {
         console.log(err);
-        res.status(400).json(err);
+        res.status(500).json(err);
       });
   },
 
@@ -87,7 +87,7 @@ const userController = {
       })
       .catch(err => {
         console.log(err);
-        res.status(400).json(err);
+        res.status(500).json(err);
       });
   },
 
@@ -106,7 +106,7 @@ const userController = {
       })
       .catch(err => {
         console.log(err);
-        res.status(400).json(err);
+        res.status(500).json(err);
       });
   }
 };
