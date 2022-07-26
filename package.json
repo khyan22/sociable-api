@@ -1,0 +1,23 @@
+{
+  "name": "sociable-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khyan22/sociable-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khyan22/sociable-api/issues"
+  },
+  "homepage": "https://github.com/khyan22/sociable-api#readme",
+  "dependencies": {
+    "webidl-conversions": "^7.0.0",
+    "whatwg-url": "^11.0.0"
+  }
+}
